@@ -19,7 +19,7 @@ contract BIMA is Context, IERC20, Ownable {
   address payable public marketingDevAddress = payable(0x93c073d58f8D635d7F13087deC1f10619f5E3D9E);
   address payable public reserveAddresss = payable(0xC6600d61528c536971c3dD778a076baB5c8b163d);
 
-  address private constant DEX_ROUTER = 0xe1662823d8044254409eB682fE34d35792677228;
+  address private constant DEX_ROUTER = 0x9b8eB69719328274Dff185cE59885D21Ad36602E;
 
   mapping(address => uint256) private _rOwned;
   mapping(address => uint256) private _tOwned;
@@ -842,10 +842,11 @@ contract BIMA is Context, IERC20, Ownable {
     liquifyRate = rate;
   }
 
+  function getCirculatingSupply() public view returns (uint256) {
+    return _tTotal.sub(balanceOf(BURN_ADDRESS));
+  }
+
   // to recieve ETH from uniswapV2Router when swaping
   receive() external payable {}
-}
-
-function getCirculatingSupply() public view returns (uint256) {
-  return _tTotal.sub(balanceOf(deadAddress));
+  
 }
