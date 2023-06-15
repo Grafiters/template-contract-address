@@ -13,7 +13,7 @@ contract BIMA is Context, IERC20, Ownable {
   using SafeMath for uint256;
   using Address for address;
 
-  address private constant BURN_ADDRESS = address(0xdead);
+  address private constant BURN_ADDRESS = address(0x000000000000000000000000000000000000dEaD);
 
   uint8 public marketingPercent = 80; // 0-100%, splits with Reserve wallet
   address payable public marketingDevAddress = payable(0x93c073d58f8D635d7F13087deC1f10619f5E3D9E);
@@ -844,4 +844,8 @@ contract BIMA is Context, IERC20, Ownable {
 
   // to recieve ETH from uniswapV2Router when swaping
   receive() external payable {}
+}
+
+function getCirculatingSupply() public view returns (uint256) {
+  return _tTotal.sub(balanceOf(deadAddress));
 }
