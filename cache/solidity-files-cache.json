@@ -1,9 +1,9 @@
 {
   "_format": "hh-sol-cache-2",
   "files": {
-    "/home/qenjie/coin_swap/contract_bima/contracts/bima.sol": {
-      "lastModificationDate": 1686758842090,
-      "contentHash": "ca56aa406f88ae7af392474acfdb9188",
+    "/home/back-dev/Documents/alone/js/contracts/bima_contract/contracts/bima.sol": {
+      "lastModificationDate": 1707793255609,
+      "contentHash": "c24e1e6887ab51c19e231de9f2aa8d66",
       "sourceName": "contracts/bima.sol",
       "solcConfig": {
         "version": "0.8.4",
@@ -29,25 +29,17 @@
         }
       },
       "imports": [
-        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
-        "@openzeppelin/contracts/utils/math/SafeMath.sol",
-        "@openzeppelin/contracts/utils/Context.sol",
-        "@openzeppelin/contracts/utils/Address.sol",
-        "@openzeppelin/contracts/access/Ownable.sol",
-        "@uniswap/v2-core/contracts/interfaces/IUniswapV2Factory.sol",
-        "@uniswap/v2-core/contracts/interfaces/IUniswapV2Pair.sol",
-        "@uniswap/v2-periphery/contracts/interfaces/IUniswapV2Router01.sol",
-        "@uniswap/v2-periphery/contracts/interfaces/IUniswapV2Router02.sol"
+        "@openzeppelin/contracts/token/ERC20/ERC20.sol"
       ],
       "versionPragmas": [
-        "^0.8.4"
+        "^0.8.0"
       ],
       "artifacts": [
-        "BimaToken"
+        "BIMA"
       ]
     },
-    "/home/qenjie/coin_swap/contract_bima/node_modules/@openzeppelin/contracts/utils/Address.sol": {
-      "lastModificationDate": 1686629793356,
+    "/home/back-dev/Documents/alone/js/contracts/bima_contract/node_modules/@openzeppelin/contracts/utils/Address.sol": {
+      "lastModificationDate": 1707788853291,
       "contentHash": "211ffd288c1588ba8c10eae668ca3c66",
       "sourceName": "@openzeppelin/contracts/utils/Address.sol",
       "solcConfig": {
@@ -81,43 +73,8 @@
         "Address"
       ]
     },
-    "/home/qenjie/coin_swap/contract_bima/node_modules/@openzeppelin/contracts/utils/Context.sol": {
-      "lastModificationDate": 1686629793356,
-      "contentHash": "5f2c5c4b6af2dd4551027144797bc8be",
-      "sourceName": "@openzeppelin/contracts/utils/Context.sol",
-      "solcConfig": {
-        "version": "0.8.4",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.0"
-      ],
-      "artifacts": [
-        "Context"
-      ]
-    },
-    "/home/qenjie/coin_swap/contract_bima/node_modules/@openzeppelin/contracts/access/Ownable.sol": {
-      "lastModificationDate": 1686629793356,
+    "/home/back-dev/Documents/alone/js/contracts/bima_contract/node_modules/@openzeppelin/contracts/access/Ownable.sol": {
+      "lastModificationDate": 1707788853335,
       "contentHash": "5a20b2cad87ddb61c7a3a6af21289e28",
       "sourceName": "@openzeppelin/contracts/access/Ownable.sol",
       "solcConfig": {
@@ -153,8 +110,8 @@
         "Ownable"
       ]
     },
-    "/home/qenjie/coin_swap/contract_bima/node_modules/@openzeppelin/contracts/utils/math/SafeMath.sol": {
-      "lastModificationDate": 1686629793406,
+    "/home/back-dev/Documents/alone/js/contracts/bima_contract/node_modules/@openzeppelin/contracts/utils/math/SafeMath.sol": {
+      "lastModificationDate": 1707788853343,
       "contentHash": "f6f4fda16c536e57069af40a245c985e",
       "sourceName": "@openzeppelin/contracts/utils/math/SafeMath.sol",
       "solcConfig": {
@@ -188,8 +145,43 @@
         "SafeMath"
       ]
     },
-    "/home/qenjie/coin_swap/contract_bima/node_modules/@uniswap/v2-core/contracts/interfaces/IUniswapV2Factory.sol": {
-      "lastModificationDate": 1686629580316,
+    "/home/back-dev/Documents/alone/js/contracts/bima_contract/node_modules/@openzeppelin/contracts/token/ERC20/IERC20.sol": {
+      "lastModificationDate": 1707788853319,
+      "contentHash": "df36f7051335cd1e748b1b6463b7fdd3",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "/home/back-dev/Documents/alone/js/contracts/bima_contract/node_modules/@uniswap/v2-core/contracts/interfaces/IUniswapV2Factory.sol": {
+      "lastModificationDate": 1707725953346,
       "contentHash": "ec39b5372f4f4d52101b4da561e2aee6",
       "sourceName": "@uniswap/v2-core/contracts/interfaces/IUniswapV2Factory.sol",
       "solcConfig": {
@@ -223,8 +215,8 @@
         "IUniswapV2Factory"
       ]
     },
-    "/home/qenjie/coin_swap/contract_bima/node_modules/@uniswap/v2-core/contracts/interfaces/IUniswapV2Pair.sol": {
-      "lastModificationDate": 1686629580316,
+    "/home/back-dev/Documents/alone/js/contracts/bima_contract/node_modules/@uniswap/v2-core/contracts/interfaces/IUniswapV2Pair.sol": {
+      "lastModificationDate": 1707725953346,
       "contentHash": "3fa31c3860f2b9585c3a98c64850829e",
       "sourceName": "@uniswap/v2-core/contracts/interfaces/IUniswapV2Pair.sol",
       "solcConfig": {
@@ -258,43 +250,8 @@
         "IUniswapV2Pair"
       ]
     },
-    "/home/qenjie/coin_swap/contract_bima/node_modules/@uniswap/v2-periphery/contracts/interfaces/IUniswapV2Router01.sol": {
-      "lastModificationDate": 1686629592176,
-      "contentHash": "95d8729b2c698dc663322167b3c085fe",
-      "sourceName": "@uniswap/v2-periphery/contracts/interfaces/IUniswapV2Router01.sol",
-      "solcConfig": {
-        "version": "0.8.4",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        ">=0.6.2"
-      ],
-      "artifacts": [
-        "IUniswapV2Router01"
-      ]
-    },
-    "/home/qenjie/coin_swap/contract_bima/node_modules/@uniswap/v2-periphery/contracts/interfaces/IUniswapV2Router02.sol": {
-      "lastModificationDate": 1686629592176,
+    "/home/back-dev/Documents/alone/js/contracts/bima_contract/node_modules/@uniswap/v2-periphery/contracts/interfaces/IUniswapV2Router02.sol": {
+      "lastModificationDate": 1707725953546,
       "contentHash": "3fd36426274a5b35f7e702f87ba08a8e",
       "sourceName": "@uniswap/v2-periphery/contracts/interfaces/IUniswapV2Router02.sol",
       "solcConfig": {
@@ -330,10 +287,230 @@
         "IUniswapV2Router02"
       ]
     },
-    "/home/qenjie/coin_swap/contract_bima/node_modules/@openzeppelin/contracts/token/ERC20/IERC20.sol": {
-      "lastModificationDate": 1686629793406,
+    "/home/back-dev/Documents/alone/js/contracts/bima_contract/node_modules/@openzeppelin/contracts/utils/Context.sol": {
+      "lastModificationDate": 1707788853295,
+      "contentHash": "f07feb4a44b1a4872370da5aa70e8e46",
+      "sourceName": "@openzeppelin/contracts/utils/Context.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Context"
+      ]
+    },
+    "/home/back-dev/Documents/alone/js/contracts/bima_contract/node_modules/@uniswap/v2-periphery/contracts/interfaces/IUniswapV2Router01.sol": {
+      "lastModificationDate": 1707725953546,
+      "contentHash": "95d8729b2c698dc663322167b3c085fe",
+      "sourceName": "@uniswap/v2-periphery/contracts/interfaces/IUniswapV2Router01.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.2"
+      ],
+      "artifacts": [
+        "IUniswapV2Router01"
+      ]
+    },
+    "/home/back-dev/Documents/alone/js/contracts/bima_contract/node_modules/@openzeppelin/contracts/token/ERC20/ERC20.sol": {
+      "lastModificationDate": 1707788853307,
+      "contentHash": "3ae5166c6827a9cf1a7a462d1632b464",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC20.sol",
+        "./extensions/IERC20Metadata.sol",
+        "../../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20"
+      ]
+    },
+    "/home/back-dev/Documents/alone/js/contracts/bima_contract/node_modules/@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol": {
+      "lastModificationDate": 1707788853319,
+      "contentHash": "909ab67fc5c25033fe6cd364f8c056f9",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../IERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC20Metadata"
+      ]
+    },
+    "/home/back-dev/Documents/alone/js/contracts/bima_contract/contracts/Context.sol": {
+      "lastModificationDate": 1707797784865,
+      "contentHash": "f07feb4a44b1a4872370da5aa70e8e46",
+      "sourceName": "contracts/Context.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Context"
+      ]
+    },
+    "/home/back-dev/Documents/alone/js/contracts/bima_contract/contracts/ERC20.sol": {
+      "lastModificationDate": 1707797818737,
+      "contentHash": "5e51eaf72abf763158b1db9650b75a06",
+      "sourceName": "contracts/ERC20.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC20.sol",
+        "./IERC20Metadata.sol",
+        "./Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20"
+      ]
+    },
+    "/home/back-dev/Documents/alone/js/contracts/bima_contract/contracts/IERC20.sol": {
+      "lastModificationDate": 1707797729579,
       "contentHash": "df36f7051335cd1e748b1b6463b7fdd3",
-      "sourceName": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+      "sourceName": "contracts/IERC20.sol",
       "solcConfig": {
         "version": "0.8.4",
         "settings": {
@@ -363,6 +540,43 @@
       ],
       "artifacts": [
         "IERC20"
+      ]
+    },
+    "/home/back-dev/Documents/alone/js/contracts/bima_contract/contracts/IERC20Metadata.sol": {
+      "lastModificationDate": 1707797764595,
+      "contentHash": "7d180a51f2ae3e249b0aaee46c94c996",
+      "sourceName": "contracts/IERC20Metadata.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC20Metadata"
       ]
     }
   }
